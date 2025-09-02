@@ -8,7 +8,7 @@ import UsersContext from "../context/UsersContext";
 import { Virtuoso } from "react-virtuoso";
 import UserFilters from "../components/UserFilters";
 
-const URI_API = "http://localhost:5174";
+const URL_API = "http://localhost:5174";
 
 function Dashboard() {
   const navigate = useNavigate();
@@ -27,7 +27,7 @@ function Dashboard() {
     setIsLoading(true);
     setError(null);
     try {
-      const response = await fetch(`${URI_API}/public/customers.json`);
+      const response = await fetch(`${URL_API}/public/customers.json`);
 
       const data = await response.json();
 
