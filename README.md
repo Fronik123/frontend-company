@@ -1,5 +1,7 @@
 # React + TypeScript + Vite
- **uuid** + **React Virtuoso** **React Virtuoso**
+
+Libraries
++ **react-virtuoso** + **react-router-dom** + **react-avatar** + **uuid**
 
 
 ### 1. git clone
