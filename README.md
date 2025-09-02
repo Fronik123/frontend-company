@@ -1,5 +1,5 @@
 # React + TypeScript + Vite
- **uuid** + **React Virtuoso**.
+ **uuid** + **React Virtuoso** **React Virtuoso**
 
 
 ### 1. git clone
