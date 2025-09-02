@@ -9,7 +9,7 @@
 ### 1. git clone
 ```bash
 git clone https://github.com/Fronik123/frontend-company
-cd frontendCompany
+cd frontend-company
 npm install
 ```
 ### 2. Add your localhost
