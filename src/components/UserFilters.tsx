@@ -38,7 +38,6 @@ const UserFilters = ({ filters, setFilters, users }: UserFilterProps) => {
         <select
           value={filters.gender}
           onChange={(e) => setFilters({ ...filters, gender: e.target.value })}
-          style={{ marginRight: 10 }}
         >
           <option value="">All</option>
           {genders.map((g, i) => (

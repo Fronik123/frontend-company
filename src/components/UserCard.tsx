@@ -31,28 +31,31 @@ function UserCard({ user, moreInfo = false }: UserCardProps) {
         round={true}
         style={{ margin: "10px" }}
       />
+
       <div className="wrapperUserName">
         <p>{user.firstName}</p>
         <p>{user.lastName}</p>
       </div>
 
-      {renderInfo("Email:", user.email)}
-      {renderInfo("Street:", user.street)}
-      {renderInfo("Street Number:", user.streetNumber)}
+      <div>
+        {renderInfo("Email:", user.email)}
+        {renderInfo("Street:", user.street)}
+        {renderInfo("Street Number:", user.streetNumber)}
 
-      {moreInfo && (
-        <button onClick={() => setIsmoreInfo(!isMoreInfo)}>
-          {isMoreInfo ? <p>less information</p> : <p>Show more info</p>}
-        </button>
-      )}
+        {moreInfo && (
+          <button onClick={() => setIsmoreInfo(!isMoreInfo)}>
+            {isMoreInfo ? <p>less information</p> : <p>Show more info</p>}
+          </button>
+        )}
 
-      {isMoreInfo && (
-        <>
-          {renderInfo("Post Code:", user.postCode)}
-          {renderInfo("Gender:", user.gender)}
-          {renderInfo("City:", user.city)}
-        </>
-      )}
+        {isMoreInfo && (
+          <>
+            {renderInfo("Post Code:", user.postCode)}
+            {renderInfo("Gender:", user.gender)}
+            {renderInfo("City:", user.city)}
+          </>
+        )}
+      </div>
     </div>
   );
 }

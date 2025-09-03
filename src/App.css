@@ -23,6 +23,7 @@ select {
 .wrapperUserCard {
   display: flex;
   flex-direction: column;
+  align-items: center;
   margin-bottom: 15px;
   border: 1px solid rgb(172, 172, 42);
   border-radius: 25px;
@@ -38,11 +39,11 @@ select {
 .wrapperInfoUser {
   display: flex;
   gap: 5px;
+  flex-wrap: wrap;
 }
 
 .userFilterContainer {
   display: flex;
-
   justify-content: space-around;
   padding: 30px;
 }
@@ -51,4 +52,11 @@ select {
   display: flex;
   flex-direction: column;
   gap: 10px;
+}
+
+@media (max-width: 768px) {
+  .userFilterContainer {
+    flex-direction: column;
+    gap: 15px;
+  }
 }
